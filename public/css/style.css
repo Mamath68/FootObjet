@@ -1,0 +1,112 @@
+/* ************Général******************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+body {
+    background-color: rgb(38, 75, 144);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+thead,
+tbody,
+th,
+tr,
+td {
+    border: 2px solid wheat;
+    table-layout: auto;
+    width: 100rem;
+    color: wheat;
+    background-color: black;
+}
+
+.table {
+    vertical-align: middle;
+}
+
+/* .box{
+    display: none;
+    width: 100%;
+}
+
+a:hover + .box,.box:hover{
+    display: block;
+    position: relative;
+    z-index: 100;
+} */
+/* **************Header****************************** ************ */
+nav {
+    background-color: rgb(153, 51, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 30px;
+    color: darkgrey;
+    text-decoration: none;
+}
+
+/* *****************Main******************************* */
+main {
+    min-height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+.mangas {
+    margin-top: 3rem;
+}
+
+.mangas img {
+    width: auto;
+    max-height: 25vh;
+}
+
+.primetitle {
+    background-color: black;
+    width: 100%;
+}
+
+.detail img {
+    width: auto;
+    max-height: 60vh;
+}
+
+.mangasdetail {
+    margin-top: 3rem;
+}
+
+
+.detail {
+    flex: 1 0 0%;
+    display: grid;
+    align-content: center;
+}
+
+
+
+/* *******************Footer***************************** */
+footer {
+    color: wheat;
+    background-color: #0a4275;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.2);
+}
