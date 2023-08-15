@@ -31,7 +31,8 @@
             <a href="index.php?ctrl=Team&action=findLigueOneTeams">Ligue 1</a>
             <a href="index.php?ctrl=Team&action=findLigueTwoTeams">Ligue 2</a>
             <a href="index.php?ctrl=Team&action=findNationalTeams">National</a>
-            <a href="index.php?ctrl=Team&action=findRegionalTeams">Regional</a>
+            <a href="index.php?ctrl=Team&action=findNationalTwoTeams">National 2</a>
+            <a href="index.php?ctrl=Team&action=findNationalThreeTeams">National 3</a>
         </nav>
     </header>
     <main>

@@ -1,5 +1,5 @@
-<h1>Listes des Créatures</h1>
+<h1>Equipes de Ligue 1</h1>
 
 <?php
-$title = "Les Créatures";
+$title = "Ligue 1";
 ?>
