@@ -29,23 +29,12 @@ td {
     table-layout: auto;
     width: 100rem;
     color: wheat;
-    background-color: black;
 }
 
 .table {
     vertical-align: middle;
 }
 
-/* .box{
-    display: none;
-    width: 100%;
-}
-
-a:hover + .box,.box:hover{
-    display: block;
-    position: relative;
-    z-index: 100;
-} */
 /* **************Header****************************** ************ */
 nav {
     background-color: rgb(153, 51, 0);
@@ -68,38 +57,6 @@ main {
 li {
     list-style: none;
 }
-
-.mangas {
-    margin-top: 3rem;
-}
-
-.mangas img {
-    width: auto;
-    max-height: 25vh;
-}
-
-.primetitle {
-    background-color: black;
-    width: 100%;
-}
-
-.detail img {
-    width: auto;
-    max-height: 60vh;
-}
-
-.mangasdetail {
-    margin-top: 3rem;
-}
-
-
-.detail {
-    flex: 1 0 0%;
-    display: grid;
-    align-content: center;
-}
-
-
 
 /* *******************Footer***************************** */
 footer {

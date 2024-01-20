@@ -23,6 +23,8 @@
         <?= $title ?>
     </title>
 </head>
+<?
+?>
 
 <body>
     <header>
@@ -42,25 +44,18 @@
     </main>
 
     <footer class="text-center text-white">
-        <!-- Grid container -->
         <div class="container p-4 pb-0">
-            <!-- Section: CTA -->
             <section>
                 <p class="d-flex justify-content-center align-items-center">
                     <span class="me-3"> © 2023 FIFA Stamm - Nouvelle version</span>
                 </p>
             </section>
-            <!-- Section: CTA -->
         </div>
-        <!-- Grid container -->
-
-        <!-- Copyright -->
         <div class="text-center p-3 footer">
 
             <a class="text-white" href="index.php?ctrl=home&action=about" target="_blank">A
                 Propos</a>
         </div>
-        <!-- Copyright -->
     </footer>
 
 

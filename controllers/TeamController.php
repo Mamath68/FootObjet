@@ -5,6 +5,8 @@ namespace Controllers;
 use Core\Session;
 use Core\AbstractController;
 use Core\ControllerInterface;
+use Models\Managers\TeamsManager;
+use Models\Managers\DivisionManager;
 
 class TeamController extends AbstractController implements ControllerInterface
 {
@@ -15,12 +17,16 @@ class TeamController extends AbstractController implements ControllerInterface
             "view" => VIEW_DIR . "home.php",
         ];
     }
+
     // Affiche les Equipes de ligue 1
-    public function findLigueOneTeams()
+    public function findLigueOneTeams($id)
     {
+        $teams = new TeamsManager();
         return [
             "view" => VIEW_DIR . "Equipes/Ligue1/Ligue1.php",
-
+            "data" => [
+                "ligueOne" => $teams->findTeamsByDivision($id)
+            ]
         ];
     }
     // Affiche les l'equipe de ligue 1 Selectionné
@@ -48,11 +54,15 @@ class TeamController extends AbstractController implements ControllerInterface
         ];
     }
     // Ensuite ça se répète
-    public function findLigueTwoTeams()
+    public function findLigueTwoTeams($id)
     {
+        $teams = new TeamsManager();
+
         return [
             "view" => VIEW_DIR . "Equipes/Ligue2/Ligue2.php",
-
+            "data" => [
+                "ligueTwo" => $teams->findTeamsByDivision($id)
+            ]
         ];
     }
     public function detailLigueTwoTeams($id)
@@ -77,11 +87,15 @@ class TeamController extends AbstractController implements ControllerInterface
         ];
     }
 
-    public function findNationalTeams()
+    public function findNationalTeams($id)
     {
+        $teams = new TeamsManager();
+
         return [
             "view" => VIEW_DIR . "Equipes/National/National1/National1.php",
-
+            "data" => [
+                "nationalOne" => $teams->findTeamsByDivision($id)
+            ]
         ];
     }
     public function detailNationalTeams($id)
@@ -105,11 +119,15 @@ class TeamController extends AbstractController implements ControllerInterface
 
         ];
     }
-    public function findNationalTwoTeams()
+    public function findNationalTwoTeams($id)
     {
+        $teams = new TeamsManager();
+
         return [
             "view" => VIEW_DIR . "Equipes/National/National2/National2.php",
-
+            "data" => [
+                "nationalTwo" => $teams->findTeamsByDivision($id)
+            ]
         ];
     }
     public function detailNationalTwoTeams($id)
@@ -133,11 +151,15 @@ class TeamController extends AbstractController implements ControllerInterface
 
         ];
     }
-    public function findNationalThreeTeams()
+    public function findNationalThreeTeams($id)
     {
+        $teams = new TeamsManager();
+
         return [
             "view" => VIEW_DIR . "Equipes/National/National3/National3.php",
-
+            "data" => [
+                "nationalThree" => $teams->findTeamsByDivision($id)
+            ]
         ];
     }
     public function detailNationalThreeTeams($id)
